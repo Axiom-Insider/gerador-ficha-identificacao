@@ -1,0 +1,199 @@
+{
+    "universidades": [
+        {
+            "id": 1,
+            "nome": "UNIVASF"
+        },
+        {
+            "id": 2,
+            "nome": "UFBA"
+        },
+        {
+            "id": 3,
+            "nome": "UNEB"
+        },
+        {
+            "id": 4,
+            "nome": "IFBA"
+        },
+        {
+            "id": 5,
+            "nome": "IF BAIANO"
+        },
+        {
+            "id": 6,
+            "nome": "UFRB"
+        },
+        {
+            "id": 7,
+            "nome": "UNEAD"
+        }
+    ],
+    "cursos": [
+        {
+            "id": 32,
+            "nome": "Especialização em Gestão da Escola Pública (GEPEM)",
+            "universidade_id": 7
+        },
+        {
+            "id": 33,
+            "nome": "Especialização em Gênero, Raça, Etnia e Sexualidade na Formação de Educadoras/es",
+            "universidade_id": 7
+        },
+        {
+            "id": 1,
+            "nome": "Bacharelado em Administração Pública",
+            "universidade_id": 1
+        },
+        {
+            "id": 2,
+            "nome": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+            "universidade_id": 1
+        },
+        {
+            "id": 3,
+            "nome": "Licenciatura em Ciências Biológicas",
+            "universidade_id": 1
+        },
+        {
+            "id": 4,
+            "nome": "Licenciatura em Pedagogia",
+            "universidade_id": 1
+        },
+        {
+            "id": 5,
+            "nome": "Licenciatura em Letras / LIBRAS",
+            "universidade_id": 1
+        },
+        {
+            "id": 6,
+            "nome": "Especialização em Educação, Contemporaneidade e Novas Tecnologias",
+            "universidade_id": 1
+        },
+        {
+            "id": 7,
+            "nome": "Especialização em Ensino de Química e Biologia",
+            "universidade_id": 1
+        },
+        {
+            "id": 8,
+            "nome": "Especialização em Metodologias Ativas",
+            "universidade_id": 1
+        },
+        {
+            "id": 9,
+            "nome": "Bacharelado em Biblioteconomia",
+            "universidade_id": 2
+        },
+        {
+            "id": 10,
+            "nome": "Tecnólogo em Gestão do Turismo e Desenvolvimento Sustentável",
+            "universidade_id": 2
+        },
+        {
+            "id": 11,
+            "nome": "Licenciatura em Teatro",
+            "universidade_id": 2
+        },
+        {
+            "id": 12,
+            "nome": "Licenciatura em Dança",
+            "universidade_id": 2
+        },
+        {
+            "id": 13,
+            "nome": "Licenciatura em Matemática",
+            "universidade_id": 2
+        },
+        {
+            "id": 14,
+            "nome": "Especialização em Direitos Humanos e Contemporaneidade",
+            "universidade_id": 2
+        },
+        {
+            "id": 15,
+            "nome": "Especialização em Gênero e Sexualidade na Educação",
+            "universidade_id": 2
+        },
+        {
+            "id": 16,
+            "nome": "Especialização em Gestão das Escolas do Campo",
+            "universidade_id": 2
+        },
+        {
+            "id": 17,
+            "nome": "Especialização em Gestão de Pessoas com Ênfase em Gestão por Competências",
+            "universidade_id": 2
+        },
+        {
+            "id": 18,
+            "nome": "Licenciatura em História",
+            "universidade_id": 3
+        },
+        {
+            "id": 19,
+            "nome": "Especialização em Gestão da Escola Pública de Ensino Médio",
+            "universidade_id": 3
+        },
+        {
+            "id": 20,
+            "nome": "Licenciatura em Educação Física",
+            "universidade_id": 4
+        },
+        {
+            "id": 21,
+            "nome": "Licenciatura em Física",
+            "universidade_id": 4
+        },
+        {
+            "id": 22,
+            "nome": "Licenciatura em Computação",
+            "universidade_id": 4
+        },
+        {
+            "id": 23,
+            "nome": "Especialização em Ensino de Ciências: CIÊNCIAS É 10!",
+            "universidade_id": 4
+        },
+        {
+            "id": 24,
+            "nome": "Especialização em Geoprocessamento",
+            "universidade_id": 5
+        },
+        {
+            "id": 25,
+            "nome": "Licenciatura em Música Popular Brasileira",
+            "universidade_id": 6
+        },
+        {
+            "id": 26,
+            "nome": "Especialização em Educação Escolar Indígena e Quilombola",
+            "universidade_id": 1
+        },
+        {
+            "id": 27,
+            "nome": "Especialização em Educação do e no Campo",
+            "universidade_id": 1
+        },
+        {
+            "id": 28,
+            "nome": "Especialização em Ciência é 10!",
+            "universidade_id": 1
+        },
+        {
+            "id": 29,
+            "nome": "Especialização em Gestão Escolar",
+            "universidade_id": 1
+        },
+        {
+            "id": 30,
+            "nome": "Especialização em Gestão em Saúde",
+            "universidade_id": 1
+        },
+        {
+            "id": 31,
+            "nome": "Especialização em Tecnologias Agrícolas",
+            "universidade_id": 1
+        }
+    ]
+}

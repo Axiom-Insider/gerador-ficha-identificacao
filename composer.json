@@ -1,0 +1,17 @@
+{
+    "name": "polouab/dados-aluno",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Axiom-insider",
+            "email": "franciscomartins0006@gmail.com"
+        }
+    ],
+    "require": {
+        "phpoffice/phpword": "^1.4"
+    }
+}
