@@ -1,0 +1,135 @@
+#universidade {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 25px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid #b8b8b8;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.curso {
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Cabeçalho */
+#universidade thead {
+    background: #0868bd;
+}
+
+#universidade thead tr th {
+    color: white;
+}
+
+#universidade th {
+    padding: 14px 16px;
+    color: black;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 700;
+    border-bottom: 2px solid #07579d;
+}
+
+/* Linhas */
+#universidade td {
+    padding: 13px 16px;
+    color: #3d3d3d;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Linhas alternadas */
+#universidade tbody tr:nth-child(even) {
+    background: #f3f5f7;
+}
+
+/* Hover */
+#universidade tbody tr:hover {
+    background: #e5f1fb;
+    transition: 0.15s ease;
+}
+
+/* Remove borda da última linha */
+#universidade tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Primeira coluna - ID */
+#universidade th:first-child,
+#universidade td:first-child {
+    width: 80px;
+    text-align: center;
+}
+
+/* Cantos do cabeçalho */
+#universidade th:first-child {
+    border-top-left-radius: 8px;
+}
+
+#universidade th:last-child {
+    border-top-right-radius: 8px;
+}
+
+/* Coluna de ações */
+#universidade th:last-child {
+    text-align: center;
+    width: 180px;
+}
+
+#universidade td.acoes {
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Botões */
+.acoes a {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 14px;
+    margin: 0 3px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+    text-decoration: none;
+}
+
+/* Editar */
+.btn-editar {
+    background: #0868bd;
+    color: white;
+}
+
+.btn-cursos {
+    background: #6d6e6e;
+    color: white;
+}
+
+.btn-cursos:hover {
+    background: #5b5c5c;
+}
+
+
+.btn-editar:hover {
+    background: #07579d;
+}
+
+/* Excluir */
+.btn-excluir {
+    background: #dc3545;
+    color: white;
+}
+
+.btn-excluir:hover {
+    background: #b02a37;
+}
+
+/* Efeito ao clicar */
+.acoes button:active {
+    transform: scale(0.96);
+}
