@@ -194,6 +194,11 @@
             "id": 31,
             "nome": "Especialização em Tecnologias Agrícolas",
             "universidade_id": 1
+        },
+        {
+            "id": 34,
+            "nome": "teste2",
+            "universidade_id": 5
         }
     ]
 }

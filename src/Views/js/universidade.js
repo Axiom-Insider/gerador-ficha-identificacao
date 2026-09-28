@@ -6,7 +6,7 @@ fetch("dados.json")
         dados = json;
         dados.universidades.forEach(universidade => {
             table.innerHTML += `
-            <tr>
+            <tr onclick="curso(${universidade.id})">
             <td>${universidade.id}</td>
             <td>${universidade.nome}</td>
             <td class="acoes">
@@ -22,3 +22,11 @@ fetch("dados.json")
     .catch(error => {
         console.error("Erro ao carregar JSON:", error);
     });
+
+
+
+function curso(id) {
+    console.log("teste");
+
+    window.location.href = "/universidades/cursos?id=" + id;
+}

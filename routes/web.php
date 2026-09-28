@@ -54,6 +54,17 @@ switch ($rota) {
         $cursosControllers->index();
         break;
 
+    case "/cursos/criar":
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+            $cursosControllers->create();
+        }
+        break;
+
+    case "/cursos/excluir":
+        $cursosControllers->apagar();
+        break;
+
 
     default:
         echo "404 - Página não encontrada";

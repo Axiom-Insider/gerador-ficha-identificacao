@@ -34,16 +34,15 @@
 
     <div class="form-container">
         <h1 class="titulo">Cadastrar Cursos</h1>
-        <form action="/universidades/criar" method="POST">
+        <form action="/cursos/criar" method="POST">
             <div class="tres">
                 <div class="campo">
                     <label for="nome">Nome do Curso:</label>
-                    <input type="text" name="nome_curso" id="universidade_nome">
+                    <input type="text" name="nome_curso" id="curso_nome">
                 </div>
                 <div class="campo">
                     <label for="nome">Universidade:</label>
                     <select name="id_universidade" id="curso_nome">
-
                         <?php foreach ($universidades[0] as $universidade): ?>
 
                             <option
@@ -72,15 +71,14 @@
             </thead>
             <tbody id="tbody">
                 <?php foreach ($cursos as $curso): ?>
-                    <tr>
+                    <tr">
                         <td><?= $curso["id"] ?></td>
                         <td><?= $curso["nome"] ?></td>
                         <td class="acoes">
-                            <a href="/cursos/editar" class="btn-editar">Editar</a>
-                            <a href="/cursos/excluir" class="btn-excluir">Excluir</a>
+                            <a href="/cursos/excluir?id=<?= $curso["id"]; ?></a>" class="btn-excluir">Excluir</a>
                         </td>
-                    </tr>
-                <?php endforeach; ?>
+                        </tr>
+                    <?php endforeach; ?>
             </tbody>
         </table>
 

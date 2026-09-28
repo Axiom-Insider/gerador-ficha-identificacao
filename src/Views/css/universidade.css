@@ -35,6 +35,10 @@
     border-bottom: 2px solid #07579d;
 }
 
+tr td {
+    cursor: pointer;
+}
+
 /* Linhas */
 #universidade td {
     padding: 13px 16px;
