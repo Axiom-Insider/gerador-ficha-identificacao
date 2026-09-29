@@ -22,7 +22,7 @@ class universidadesController
             exit;
         }
 
-        $id = (int) $_GET["id"];
+        $id = (int) filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 
         $dados = $this->lerUniversidades($this->arquivo);
 
@@ -30,7 +30,7 @@ class universidadesController
 
             if ($universidade['id'] === $id) {
 
-                $nome = $universidade["nome"];
+                $nome = htmlspecialchars($universidade["nome"], ENT_QUOTES, 'UTF-8');
             }
         }
 
@@ -46,8 +46,8 @@ class universidadesController
             exit;
         }
 
-        $id = (int) $_POST["id"];
-        $nome =  $_POST["nome_universidade"];
+        $id = (int) filter_input(INPUT_POST, 'id', FILTER_SANITIZE_NUMBER_INT);
+        $nome =  htmlspecialchars(filter_input(INPUT_POST, 'nome_universidade', FILTER_SANITIZE_STRING), ENT_QUOTES, 'UTF-8');
 
         $dados = $this->lerUniversidades($this->arquivo);
         foreach ($dados['universidades']  as &$universidade) {
@@ -77,13 +77,15 @@ class universidadesController
             exit;
         }
 
+        $nome = htmlspecialchars(filter_input(INPUT_POST, 'nome_universidade', FILTER_SANITIZE_STRING), ENT_QUOTES, 'UTF-8');
+
         $dados = $this->lerUniversidades($this->arquivo);
 
         $idUniversidade = $this->gerarProximoId($dados["universidades"]);
 
         $novaUniversidade = [
             "id" => $idUniversidade,
-            "nome" => $_POST['nome_universidade']
+            "nome" => $nome
         ];
 
         $dados["universidades"][] = $novaUniversidade;
@@ -108,7 +110,7 @@ class universidadesController
             exit;
         }
 
-        $id = (int) $_GET['id'];
+        $id = (int) filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 
         $dados = $this->lerUniversidades($this->arquivo);
 
@@ -152,10 +154,16 @@ class universidadesController
 
     static function lerUniversidades(string $arquivo)
     {
+        if (!file_exists($arquivo)) {
+            header("Location: /universidades");
+            exit;
+        }
+
         $json = file_get_contents($arquivo);
 
         return json_decode($json, true);
     }
+
     private function gerarProximoId(array $universidades)
     {
         if (empty($universidades)) {

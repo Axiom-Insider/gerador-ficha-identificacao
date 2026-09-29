@@ -26,7 +26,5 @@ fetch("dados.json")
 
 
 function curso(id) {
-    console.log("teste");
-
     window.location.href = "/universidades/cursos?id=" + id;
 }
