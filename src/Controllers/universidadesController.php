@@ -47,7 +47,7 @@ class universidadesController
         }
 
         $id = (int) filter_input(INPUT_POST, 'id', FILTER_SANITIZE_NUMBER_INT);
-        $nome =  htmlspecialchars(filter_input(INPUT_POST, 'nome_universidade', FILTER_SANITIZE_STRING), ENT_QUOTES, 'UTF-8');
+        $nome =  htmlspecialchars(filter_input(INPUT_POST, 'nome_universidade', FILTER_SANITIZE_SPECIAL_CHARS), ENT_QUOTES, 'UTF-8');
 
         $dados = $this->lerUniversidades($this->arquivo);
         foreach ($dados['universidades']  as &$universidade) {
@@ -77,7 +77,7 @@ class universidadesController
             exit;
         }
 
-        $nome = htmlspecialchars(filter_input(INPUT_POST, 'nome_universidade', FILTER_SANITIZE_STRING), ENT_QUOTES, 'UTF-8');
+        $nome = htmlspecialchars(filter_input(INPUT_POST, 'nome_universidade', FILTER_SANITIZE_SPECIAL_CHARS), ENT_QUOTES, 'UTF-8');
 
         $dados = $this->lerUniversidades($this->arquivo);
 
