@@ -43,7 +43,7 @@
                 <div class="campo">
                     <label for="nome">Universidade:</label>
                     <select name="id_universidade" id="curso_nome">
-                        <?php foreach ($universidades[0] as $universidade): ?>
+                        <?php foreach ($universidades as $universidade): ?>
 
                             <option
                                 value="<?= $universidade['id'] ?>"

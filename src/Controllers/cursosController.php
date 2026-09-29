@@ -20,7 +20,7 @@ class CursosController
         $dados = UniversidadesController::lerUniversidades($this->arquivo);
 
         // Inicializa arrays para armazenar universidades e cursos
-        $universidades = [];
+        $universidades = $dados["universidades"];
         $cursos = [];
 
         // Itera pelos cursos e filtra o curso com o id especificado
